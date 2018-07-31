@@ -1,0 +1,52 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div id=tables>
+  {% for match in moves_tables %}
+    {% for url, table in match.items %}
+  	<a href={{ url }}>{{ url }}</a>
+    <table class=movetable>
+      {% for player, movesets in table.items %}
+	    <tr>
+		  <th colspan=2>{{ player|lower }}</th>
+		  <th class=move>1</th>
+		  <th class=move>2</th>
+		  <th class=move>3</th> 
+		  <th class=move>4</th>
+	    </tr>
+		{% for pokemon, set in movesets %}
+		  <tr>
+			<td><img src="/static/icons/{{pokemon}}.png"></td>
+			<td class=pokemon_col>{{ pokemon }}</td>
+			{% for move in set %}
+			  <td class=move>{{ move }}</td>
+			{% endfor %}
+			{% with set|length|add:"-4"|stringformat:"+d"|slice:"1:" as range %}
+			{% for i in ""|center:range %}
+			  <td class=move></td>
+			{% endfor %}
+			{% endwith %}
+		  </tr>
+		{% endfor %}
+	  {% endfor %}
+	</table>
+	{% endfor %}
+  {% endfor %}
+  </div>
+
+
+
+
+Raw:
+<br>
+<textarea id=raw rows={{ row_count }} cols=60>
+{{ raw }}
+</textarea>
+		
+</body>
+</html>

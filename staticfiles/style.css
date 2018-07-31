@@ -1,0 +1,248 @@
+/* Index */
+
+nav {
+	padding: 10px;
+	border: 2px solid black;
+	margin-bottom: 2px;
+}
+
+
+
+/* Stats page */
+
+/* Info pane */
+
+#info {
+	margin-left: 5px;
+	background-color: white;
+	text-align: center;
+}
+	#counts {
+		margin-bottom: 10px;
+	}
+
+		#counts > .well-sm {
+			margin-bottom: 2px;
+		}
+
+	.nav-tabs {
+		text-align: center;
+		border: none;
+	}
+
+		.nav-tabs > li {
+		    float:none;
+		    display:inline-block;
+		    /*margin: 0px;*/
+		}
+	
+	.tab-pane {
+		max-height: 1000px;
+    	overflow: auto;
+	}
+
+	#resubmit {
+		padding: 7px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		
+	}
+
+	#replay-table {
+		padding: 3px;
+		margin-left: 0;
+		border-radius: 4px;
+	}
+		
+		#replay-table th {
+    		text-align: center;
+    		height: 50%;
+		}
+
+		.replay-tie {
+			background-color: orange;
+		}
+
+	#replay-text {
+		display: block;
+		box-sizing: border-box;
+		padding: 3px;
+		border-color: #ddd;
+	}
+
+	#replays-add {
+		display:block;
+		padding:3px;
+		margin-top:3px;
+		height:250px;
+	}
+
+.rawtext {
+	font-family: Consolas,Menlo,Monaco,"Lucida Console","Courier New",Courier,monospace;
+	font-size: 11px;
+	white-space: pre;
+}
+
+/* results on results page*/
+.rawtext.results {
+	width: 425px;
+	height: 250px;
+}
+
+#wrapper {
+	display:block;
+	position: relative;
+	margin-right:auto;
+	width:120%;
+}
+
+/* container results divs */
+.results.pane {
+	padding:10px;
+	margin:5px auto;
+	float:left;
+}
+
+/* Tables */
+
+h1 {
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.move {
+    width: 100px;
+}
+
+.pokemon_col {
+	width: 80px;
+}
+
+pre {
+    display: inline;
+    margin: 0;
+    margin-top:5px; 
+    margin-bottom:5px;
+}
+
+#raw {
+	float:left;
+}
+
+#ruw {
+	float:left;
+	width:500px;
+	height:1000px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr {
+	height: 37px;
+}
+
+#pairings_table {
+	
+}
+
+#table-match {
+	float:left;
+	margin-right:70px;
+}
+
+#tables {
+	float:left;
+}
+
+th, td {
+    padding: 5px;
+}
+
+
+
+.tier_filter {
+	background-color:blue;
+	color:#3FD188;
+	padding:2px;
+}
+
+.exact {
+	background-color:#3FD188;
+}
+
+.fuzzy {
+	background-color:#ECDF29
+}
+
+.partial {
+	background-color:#EAA01F
+}
+
+.form {
+	padding: 10px;
+	border: 2px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color:white;
+	list-style-type: none;
+	display:block;
+}
+
+.form label {
+	display:block;
+}
+
+.form_pane {
+	padding: 10px;
+	border: 2px solid black;
+	margin: 5px;
+	background-color: #f0f0f5;
+}
+
+#parse_types {
+	margin: 5px;
+}
+
+#index_form {
+	border: 2px solid black;
+	padding: 5px;
+	background-color: white;
+}
+
+.hidden {
+	display:none;
+}
+
+ul.form {
+	display: block;
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    margin-top: 1em;
+    margin-bottom: 0;
+    
+}
+
+#options_pane {
+	display: block;
+}
+
+/*#unmatched_replays {
+	position: sticky;
+	top: 1px;
+	/*left: 700;
+	top: 150;
+}*/
+
+/*label {
+	float:left;
+}*/
+
+#options_pane input[type="number"] {
+	width: 4em;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include "header.html" %}
+</head>
+
+<body>
+{% include "navbar.html" %}
+
+<form method="post">
+	{% csrf_token %}
+	Start:<br>
+	<input type="text" name="start"><br>
+	End:<br>
+	<input type="text" name="end"><br>
+	Thread URL:<br>
+	<input type="text" name="url"><br>
+	Server (Leave blank for Main):<br>
+	<input type="text" name="server" value="smogtours"><br>
+	Tier:<br>
+	<input type="text" name="tier"><br>
+	
+	<input type="checkbox" name="clear">Clear cache<br>
+	<input type="submit" value="Submit">
+	
+</form> 
+
+</body>
+</html>

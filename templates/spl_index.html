@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<html>
+<body>
+
+<div>
+	<h1>List of replay URLs:</h1>
+	Example: http://replay.pokemonshowdown.com/gen7pokebankoususpecttest-507567783
+</div>
+<br>
+<form method="post">
+	{% csrf_token %}
+	URLs: 
+	<br>
+	<textarea rows="4" cols="80" name="replay_urls"></textarea>
+	<br>
+	<input type="submit" name="link_submit" value="Submit">
+</form>
+
+<div>
+	<h1>Name of player:</h1>
+</div>
+<br>
+<form method="post">
+	{% csrf_token %}
+	Name:
+	<br>
+	<input type="text" name="player">
+	<br>
+	Tier (formatted as genXtier, i.e. gen2ou):<br>
+	<input type="text" name="tier">
+	<br>
+	<input type="submit" name="player_submit" value="Submit">
+</form>
+
+</body>
+</html>
